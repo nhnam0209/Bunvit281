@@ -1,4 +1,5 @@
 import React from 'react'
+import "./aboutus.scss"
 
 export default function AboutUs() {
   return (
