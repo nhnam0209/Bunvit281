@@ -1,6 +1,7 @@
 import React from 'react'
 import "./navbar.scss"
 import {Restaurant , Home, Collections, LocalPhone, Place} from '@material-ui/icons';
+import logo from "../assets/logo_homepage.png"
 
 export default function Navbar() {
   return (
@@ -8,7 +9,9 @@ export default function Navbar() {
         <div className="wrapper">
             <div className="left">
                 <div className="Logo">
-                  <a href="#intro">BunVitLVS</a>
+                  <a href="#intro">
+                    <img src={logo} height={100} width={120}/>
+                  </a>
                 </div>
             </div>
             <div className="right">
