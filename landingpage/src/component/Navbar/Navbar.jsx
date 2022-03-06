@@ -33,7 +33,7 @@ export default function Navbar() {
                 </div>
                 <div className="itemContainer">
                   <LocalPhone className = "icon"/>        
-                  <a href="#contact">Contact</a>
+                  <a href="#order">Order</a>
                 </div>
                 
             </div>

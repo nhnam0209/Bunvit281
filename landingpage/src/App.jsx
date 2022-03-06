@@ -1,5 +1,5 @@
 import AboutUs from "./component/AboutUs/AboutUs";
-import Contact from "./component/Contact/Contact";
+import Order from "./component/Order/Order";
 import Gallery from "./component/Gallery/Gallery";
 import Intro from "./component/Intro/Intro";
 import Navbar from "./component/Navbar/Navbar";
@@ -16,7 +16,7 @@ function App() {
         <AboutUs/>
         <Gallery/>
         <Location/>
-        <Contact/>
+        <Order/>
         {/* <Scrollbutton/> */}
       </div>
     </div>
