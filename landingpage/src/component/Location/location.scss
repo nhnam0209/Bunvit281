@@ -4,4 +4,77 @@
     background-color: rgb(255, 127, 127);
     width: 100%;
     height: 100%;
+    text-align: center;
+    @include mobile{
+        justify-content: space-around; 
+      }  
+    
+    h1{
+        font-size: 70px;
+        height: 10%;
+        margin-top: 40px;
+        color: white;
+        text-shadow: 1px 1px 2px #FF4949;
+
+        @include mobile{
+            font-size: 30px;
+            padding: 10px;
+            overflow: hidden;
+        }
+    }
+
+
+    .container{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include mobile{
+            height: 50vh;
+        }
+
+        .item{
+            margin-top: 100px;
+            width: 90%;
+            height: 100%;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            @include mobile{
+                flex-direction: column;   
+                height: 100%;
+                margin-top: 50px;
+            }
+    
+            
+        }
+
+        img{
+            width: 80%;
+            height: 90%;
+            @include mobile{
+
+                width: 700px;
+                height: 250px;
+            }
+        }
+
+        button{
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            font-size: 20px;
+            background-color: #FC766AFF;
+            cursor: pointer;
+            border-radius: 12px;
+            padding: 20px;
+            border: none;
+            color: white;
+
+
+        }
+    }
 }

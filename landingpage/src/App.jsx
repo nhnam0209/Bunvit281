@@ -2,16 +2,25 @@ import AboutUs from "./component/AboutUs/AboutUs";
 import Order from "./component/Order/Order";
 import Gallery from "./component/Gallery/Gallery";
 import Intro from "./component/Intro/Intro";
-import Navbar from "./component/Navbar/Navbar";
 import "./app.scss"
 import Location from "./component/Location/Location";
 // import Scrollbutton from "./function/Scrollbutton";
+import Navigation from "./component/Navigation/Navigation";
+import Menu from "./component/Menu/Menu";
+import { useState } from "react";
+
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
+
     <div className="app">
-      <Navbar/>
+      <Navigation menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+
       <div className="sections">
+
         <Intro/>
         <AboutUs/>
         <Gallery/>
@@ -20,6 +29,7 @@ function App() {
         {/* <Scrollbutton/> */}
       </div>
     </div>
+
   );
 }
 

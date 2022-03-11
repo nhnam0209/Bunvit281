@@ -9,7 +9,7 @@ export default function Intro() {
             <div className="slider">     
               <SmoothList>
               <h1>Welcome to Bun Vit 281 LVS</h1>
-              <button ><a className='toorder' href="#order">Contact to Order</a></button>
+              <button ><a className='toorder' href="#order">Gọi đặt món</a></button>
               </SmoothList>
             </div>
             {/* <a className='godown' href="#aboutus">
